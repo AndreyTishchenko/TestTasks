@@ -1,0 +1,306 @@
+@use 'main' as *;
+@font-face{
+    font-family: Montserrat;
+    src: url('../assets/fonts/Montserrat-VariableFont_wght.ttf');
+}
+
+@font-face{
+    font-family: Allura;
+    src: url('../assets/fonts/Allura-Regular.ttf');
+}
+
+#Hero{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-image: url('../assets/images/bg-ball.png'), url('../assets/images/bg-snow.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.Hero_Content{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    width: 429px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    @media screen and (max-width: 438px) {
+        width: 95.79%;
+    }
+    h1{
+        text-align: center;
+        margin: auto;
+        color: $Static_White;
+    }
+
+    span:first-child{
+        color: $Static_White;
+        margin-bottom: 12px;
+    }
+
+    a{
+        padding: 19px 31.841px;
+        border-radius: 20px;
+        background-color: $Dark;
+        border: 0px;
+        margin-top: 12px;
+    }
+
+    span:last-child{
+        color: $Static_White;
+        margin-top: 12px;
+    }
+}
+
+#about{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-image: url('../assets/images/bg-snow.png');
+    background-size: cover;
+    background-position: center;
+    
+    @media screen and (max-width: 654px) {
+        .About_Content{
+            flex-direction: column;
+        }
+    }
+}
+
+.About_Content{
+    background-color: $Static_White;
+    border-radius: 20px;
+    padding-left: 60px;
+    width: 88.6111%;
+    max-width: 1276px;
+    min-height: 428px;
+    margin: auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: 768px) {
+        width: 97.916%;
+    }
+    
+    @media screen and (max-width: 654px) {
+        padding: 0px;
+        align-items: center;
+    }
+    .santa_image{
+        width: 52.5%;
+        aspect-ratio: 638/528;
+        border-radius: 20px;
+        background-image: url('../assets/images/santa.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        @media screen and (max-width: 768px) {
+            width: 54.337%;
+        }
+        
+        @media screen and (max-width: 654px) {
+            width: 100%;
+        }
+    }
+    .text_content{
+        padding-top: 100px;
+        padding-bottom: 100px;
+
+        div{
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+        width: 35.034%;
+        span{
+            color: $primary;
+        }
+
+        h2{
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        p{
+            margin: 0px;
+        }
+
+        @media screen and (max-width: 768px) {
+            padding-top: 46px;
+            padding-bottom: 46px;
+            width: 36.997%;
+        }
+    }
+}
+
+#slider{
+    color: $Static_White;
+    padding-top: 60px;
+    background-image: url('../assets/images/bg-snow.png');
+    background-size: cover;
+    background-position: center;
+    .text_div{
+        margin: auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h5, h2{
+            margin: 0px;
+        }
+
+        h5{
+            margin-bottom: 12px;
+        }
+
+        h2{
+            margin-bottom: 20px;
+            margin-left: 4px;
+        }
+    }
+    
+    .slider_content{
+        padding-left: 5.695%;
+        box-sizing: border-box;
+        img{
+            width: 200px;
+            height: 200px;
+            border-radius: 20px;
+        }
+        .visible_part{
+            width: 100%;
+            overflow: hidden;
+            .slider_road{
+                gap: 20px;
+                display: flex;
+                align-items: center;
+                transition: transform 0.5s ease;
+                width: fit-content;
+            }
+        }
+        .controller{
+            display: flex;
+            gap: 20px;
+            justify-content: end;
+            margin-top: 19px;
+            padding-right: 82px;
+            .prev_btn{
+                transform: rotate(180deg);
+                stroke: $Static_White;
+            }
+
+            .next_btn{
+                stroke: $Static_White;
+            }
+        }
+
+    }
+    padding-bottom: 60px;
+    @media screen and (max-width: 768px) {
+        .slider_content{
+            padding-left: 1.042%;
+            .controller{
+                padding-right: 8px;
+            }
+        }
+    }
+}
+
+#best{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-image: url('../assets/images/bg-snow.png');
+    background-size: cover;
+    background-position: center;
+    .Best_Gifts_Content{
+        width: 88.6112%;
+        max-width: 1276px;
+        box-sizing: border-box;
+        margin: auto;
+        text-align: center;
+        h2{
+            text-align: center;
+            margin-top: 12px;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+
+#cta{
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-image: url('../assets/images/bg-forest.png'), url('../assets/images/bg-snow.png');
+    background-size: cover;
+    background-position: center;
+    .CTA_wrapper{
+        width: 88.6112%;
+        padding-top: 60px;
+        padding-bottom: 60px;
+        margin: auto;
+        justify-content: center;
+        display: flex;
+        .CTA_content{
+            max-width: 426px;
+            width: 100%;
+            margin: auto;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            padding-top: 60px;
+            padding-bottom: 60px;
+            gap: 20px;
+            align-items: center;
+            h2{
+                text-align: center;
+                color: white;
+                margin: 0px;
+            }
+        
+            span{
+                text-align: center;
+                color: white;
+            }
+        
+            a{
+                display: flex;
+                justify-content: center;
+                border-radius: 20px;
+                padding: 20px 32px;
+                background-color: $Dark;
+                text-align: center;
+                span{
+                    color: $Static_White;
+                    color: white;
+                }
+            }
+        
+            .timer{
+                display: flex;
+                margin: auto;
+                background-color: $Static_White_40;
+                border-radius: 20px;
+                padding: 8px 12px;
+                margin-top: 8px;
+                h2{
+                    margin: 0px;
+                }
+        
+                h4{
+                    margin: auto;
+                    color: $Static_White;
+                }
+        
+                .timer-section{
+                    width: 80px;
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}

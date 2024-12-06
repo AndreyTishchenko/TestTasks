@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="app">
+        <svg class="scroll-to-top" width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0.5" y="0.5" width="55" height="55" rx="27.5" fill="white"/>
+            <rect x="0.5" y="0.5" width="55" height="55" rx="27.5" stroke="#FF4646"/>
+            <path d="M28 21V35" stroke="#FF4646" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M34 27L28 21" stroke="#FF4646" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M22 27L28 21" stroke="#FF4646" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <main>
+            <div class="h1_wrapper">
+                <h1>Achieve health, harmony, and inner strength</h1>
+            </div>
+            <div class="tabs">
+                <button class="tab Action_Small active" disabled id="all">
+                    ALL
+                </button>
+                <button class="tab Action_Small" id="work">
+                    FOR WORK
+                </button>
+                <button class="tab Action_Small" id="health">
+                    FOR HEALTH
+                </button>
+                <button class="tab Action_Small" id="harmony">
+                    FOR HARMONY
+                </button>
+            </div>
+            <div class="cards"></div>
+        </main>
+    </div>
+    <scrypt src="./js/gifts.js"></scrypt>
+    <script src="./js/components/scrollButton.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+@use 'main' as *;
+@font-face{
+    font-family: Montserrat;
+    src: url('../assets/fonts/Montserrat-VariableFont_wght.ttf');
+}
+
+@font-face{
+    font-family: Allura;
+    src: url('../assets/fonts/Allura-Regular.ttf');
+}
+
+h1{
+    width: 426px;
+    margin: auto;
+    text-align: center;
+    color: $Static_White;
+}
+
+.h1_wrapper{
+    margin: 0px 0px 80px 0px;
+    max-width: 1440px;
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+    padding-top: 60px;
+    margin-bottom: 20px;
+    background: url(../assets/images/bg-garland.png) 0 0 / 100% auto no-repeat;
+}
+
+.tabs{
+    display: flex;
+    gap: 8px;
+    margin: auto;
+    width: fit-content;
+    margin-bottom: 16px;
+    .tab{
+        padding: 12px 20px;
+        border-radius: 12px;
+        background-color: rgba(1, 1, 1, 0);
+        color: $Static_White;
+        border: 0px;
+    }
+    
+    .tab.active{
+        background-color: $Static_White_20;
+    }
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    display: none; /* Initially hidden */
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .scroll-to-top {
+      display: none; /* Controlled by JavaScript */
+    }
+  }
+
+main{
+    padding-bottom: 60px;
+    box-sizing: border-box;
+    width: 100%;
+}
