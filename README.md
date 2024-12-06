@@ -30,5 +30,5 @@
 
 Материалы по ссылке: https://drive.google.com/file/d/1RooBwpfZqCvs0abw3YhyWgL1CoZb2BuV/view?usp=sharing
 
-[![Original Task](https://docs.google.com/document/d/1WLlkSjIKq8PfACDIO9hDJacHcGGelcZ21aWJ4-z5oL0/edit?tab=t.0)]
+[[Original Task](https://docs.google.com/document/d/1WLlkSjIKq8PfACDIO9hDJacHcGGelcZ21aWJ4-z5oL0/edit?tab=t.0)]
 
