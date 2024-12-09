@@ -32,3 +32,7 @@
 
 [Original Task(https://docs.google.com/document/d/1WLlkSjIKq8PfACDIO9hDJacHcGGelcZ21aWJ4-z5oL0/edit?tab=t.0)]
 
+Инструкция по запуску:
+1. Перейти в папку Abacus
+2. Выполнить команду npm install
+3. Выполнить команду npm run dev
