@@ -1,0 +1,20 @@
+.abacus {
+  position: relative; /* Устанавливаем контекст позиционирования */
+  width: fit-content;
+  border: 2px solid var(--color); /* Добавляем красную рамку */
+  border-bottom: 10px solid var(--color);
+  border-top: 10px solid var(--color);
+  padding: 5px;
+}
+
+.abacus::before {
+  content: ""; /* Создаем декоративный элемент */
+  position: absolute; /* Абсолютное позиционирование внутри блока */
+  top: 0; /* Линия начинается от верхнего края блока */
+  bottom: 0; /* Линия тянется до нижнего края блока */
+  left: 50%; /* Центрируем линию по горизонтали */
+  width: 3px; /* Задаем ширину линии */
+  background-color: var(--color); /* Цвет линии */
+  transform: translateX(-50%); /* Компенсируем половину ширины линии для точного центрирования */
+  z-index: -1; /* Отправляем линию за содержимое */
+}
