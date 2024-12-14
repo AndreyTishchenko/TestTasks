@@ -1,0 +1,80 @@
+.status-awaiting select { background-color: yellow; }
+.status-in-transit select { background-color: blue; color: white; }
+.status-delivered { background-color: green; color: white; }
+
+.select-custom {
+    padding: 0px; /* Отступы внутри */
+    border: 1px solid #ced4da; /* Цвет рамки */
+    border-radius: 0.25rem; /* Закругление углов */
+    background-color: #ffffff; /* Фоновый цвет */
+    appearance: none; /* Отключаем стандартный стиль браузера */
+    background-image: url('path/to/your/icon.png'); /* Добавьте свою стрелку */
+    background-repeat: no-repeat;
+    background-position: right 10px center; /* Позиция стрелки */
+    background-size: 12px; /* Размер стрелки */
+}
+
+.select-custom.status{
+    padding: 5px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+/* Стили для опций (если нужно) */
+.select-custom option {
+    padding: 10px; /* Отступы для опций (не всегда работают) */
+}
+
+.container{
+    padding: 0px;
+}
+
+.cargo-tracking{
+    border: 1px solid black;
+}
+
+.form-control{
+    font-size: 8px;
+    font-weight: 400;
+}
+
+.cargo-form-container {
+    position: fixed;
+    left: -100%;
+    top: 0px; /* Отступ сверху */
+    transition: left 0.3s ease; /* Плавная анимация */
+    background-color: white; /* Фон блока */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Тень для блока */
+    padding: 20px; /* Отступы внутри блока */
+    z-index: 1000; /* Обеспечиваем, что блок выше других элементов */
+    height: 100vh;
+    width: 100vw;
+}
+
+select{
+    -webkit-appearance: none; /* Отключаем стандартный стиль */
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('./free-icon-arrow-point-down-20682.png'); /* Добавьте свою стрелку */
+    background-repeat: no-repeat;
+    background-position: right 14px center; /* Позиция стрелки */
+    background-size: 12px; /* Размер стрелки */
+}
+
+.cargo-form-container.active {
+    left: 1px; /* Позиция при открытии блока */
+    transition: left 0.3s ease; /* Плавная анимация */
+}
+
+.cross{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+}
