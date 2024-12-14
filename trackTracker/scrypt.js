@@ -29,9 +29,9 @@ function displayCargoList() {
             <td>${cargo.id}</td>
             <td>${cargo.name}</td>
             <td class="${getStatusClass(cargo.status)}">
-                ${cargo.status}
-                ${cargo.status === 'Доставлен' ? '' : `<select onchange="updateStatus('${cargo.id}', this.value)">
-                    <option value="">Изменить статус...</option>
+                ${cargo.status === 'Доставлен' ? cargo.status : ''}
+                ${cargo.status === 'Доставлен' ? '' : `<select class="form-control select-custom status" onchange="updateStatus('${cargo.id}', this.value)">
+                    <option value="">${cargo.status}</option>
                     <option value="Ожидает отправки">Ожидает отправки</option>
                     <option value="В пути">В пути</option>
                     <option value="Доставлен">Доставлен</option></select>`}
@@ -137,3 +137,9 @@ function displayFilteredCargoList(filteredList) {
 
 // Инициализация отображения при загрузке страницы
 displayCargoList();
+document.querySelectorAll('#toggleCargoForm').forEach(element => {
+    element.addEventListener('click', function() {
+        const cargoFormContainer = document.getElementById('cargoFormContainer');
+        cargoFormContainer.classList.toggle('active'); // Переключаем класс для анимации
+    });
+})
